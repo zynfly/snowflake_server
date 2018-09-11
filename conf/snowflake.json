@@ -1,0 +1,36 @@
+{
+  "max_connection": 128,
+  "thread_number": 4,
+  "listen_address": "0.0.0.0",
+  "listen_port": "80",
+  "services": [
+    {
+      "pattern": "/article",
+      "timestamp_bits": 41,
+      "datacenter_id_bits": 5,
+      "worker_id_bits": 5,
+      "sequence_bits": 12,
+      "start_timestamp": 1536224730,
+      "timestamp_type": "sec",
+      "datacenter_id": 1,
+      "worker_id": 1,
+      "ip_white_lists": [
+        "127.0.0.1"
+      ]
+    },
+    {
+      "pattern": "/logs",
+      "timestamp_bits": 41,
+      "datacenter_id_bits": 5,
+      "worker_id_bits": 5,
+      "sequence_bits": 12,
+      "start_timestamp": 1536224730000,
+      "timestamp_type": "mil",
+      "datacenter_id": 1,
+      "worker_id": 1,
+      "ip_white_lists": [
+        "127.0.0.1"
+      ]
+    }
+  ]
+}

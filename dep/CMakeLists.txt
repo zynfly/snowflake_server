@@ -1,1 +1,5 @@
-include_directories(json/single_include)
+add_library(json INTERFACE)
+
+target_include_directories(json
+        INTERFACE
+        json/single_include)
